@@ -10,28 +10,16 @@
 
         while (attemptCount < 3) {
             var id = prompt('아이디를 입력해주세요.');
-            if (id === '오뚜띠'|| '백떤똥') {
+            if (id && (id === '오뚜띠' || id === '백떤똥') {
                 var password = prompt('비밀번호를 입력해주세요.');
-                if (password === '070111'|| '0111'||'070724'||'0724') {
+                 if (password && === '070111'|| '0111'||'070724'||'0724') {
                     alert('인증 했습니다.');
                     break; // 성공했으므로 루프를 종료합니다.
                 } else {
                     attemptCount++;
                     alert('비밀번호가 틀렸습니다. (' + attemptCount + '/3)');
                 }
-            } /*
-             if (id === '안녕') {
-                var password = prompt('비밀번호를 입력해주세요.');
-                if (password === '111111') {
-                    alert('인증 했습니다.');
-                    break; // 성공했으므로 루프를 종료합니다.
-                } else {
-                    attemptCount++;
-                    alert('비밀번호가 틀렸습니다. (' + attemptCount + '/3)');
-                }
-             }*/
-            
-            else {
+            }else {
                 alert('존재하지 않는 아이디입니다.');
             }
         }
